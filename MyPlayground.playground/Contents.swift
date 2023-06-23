@@ -22,7 +22,6 @@ var altura: Double = 1.74
 var gostaOuNao: Bool = true
 
 print("Inicial do nome: \(letraInicialNome) \nNome: \(nome) \nApelido: \(apelido) \nIdade: \(idade) \nAltura: \(altura) \nGosta de Gatos: \(gostaOuNao)")
-*/
 
 10 + 2
 10 - 2
@@ -51,3 +50,28 @@ var nome = "Linconl"
 var sobrenome = "Castro"
 print(nome + sobrenome)
 print("Meu nome é \(nome) \(sobrenome)")
+
+let resultado01 = 50 + 3 * 2
+let resultado02 = (50 + 3) * 2
+print(resultado01)
+print(resultado02)
+ */
+
+//desafio 1
+//F = C * 9/5 + 32
+
+var celsius: Double = 46
+
+var fahrenheit = celsius * 9/5 + 32
+
+print("Em fahrenheit, a temperatura é \(fahrenheit) ºF.")
+
+//Desafio 2 - Cálculo de média
+
+var nota1 : Double = 9
+var nota2 : Double = 8
+var nota3 : Double = 10
+
+var media = (nota1 + nota2 + nota3 ) / 3
+
+print("A média das notas é \(media).")
