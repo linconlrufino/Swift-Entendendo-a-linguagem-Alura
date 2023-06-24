@@ -55,7 +55,6 @@ let resultado01 = 50 + 3 * 2
 let resultado02 = (50 + 3) * 2
 print(resultado01)
 print(resultado02)
- */
 
 //desafio 1
 //F = C * 9/5 + 32
@@ -75,3 +74,25 @@ var nota3 : Double = 10
 var media = (nota1 + nota2 + nota3 ) / 3
 
 print("A média das notas é \(media).")
+
+*/
+
+var pontuacao1 = 8.0
+var pontuacao2 = 10.0
+
+pontuacao1 > pontuacao2
+pontuacao1 >= pontuacao2
+pontuacao1 < pontuacao2
+pontuacao1 <= pontuacao2
+pontuacao1 == pontuacao2
+pontuacao1 != pontuacao2
+
+var usuario1Venceu = pontuacao1 > pontuacao2
+var usuario2Venceu = pontuacao2 > pontuacao1
+
+var idade = 22
+var adulto = idade >= 18
+var possuiCNHValida = false
+
+var podeDirigir = adulto || possuiCNHValida
+!adulto
