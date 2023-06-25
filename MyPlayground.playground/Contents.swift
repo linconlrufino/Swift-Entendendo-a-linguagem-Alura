@@ -36,7 +36,6 @@ Double(5) / 2
 5 + 2 * 10
 (5 + 2) * 10
 
-
 var numero1 = 10
 var numero2 = 50
 var soma = numero1 + numero2
@@ -75,8 +74,6 @@ var media = (nota1 + nota2 + nota3 ) / 3
 
 print("A média das notas é \(media).")
 
-*/
-
 var pontuacao1 = 8.0
 var pontuacao2 = 10.0
 
@@ -96,3 +93,31 @@ var possuiCNHValida = false
 
 var podeDirigir = adulto || possuiCNHValida
 !adulto
+*/
+
+ var idade = 22
+
+ if idade >= 18 {
+     print("Pode iniciar o processo de tirar carta.")
+ } else {
+     print("Você não pode tirar carta ainda.")
+ }
+
+var possuiCNHValida = true
+
+if idade >= 18 && possuiCNHValida {
+    print("Pode dirigir.")
+} else {
+    print("Não pode dirigir.")
+}
+
+var numero1 = 5
+var numero2 = 2
+
+if numero2 > numero1 {
+    print("Número 2 é maior que número 1")
+} else if numero1 > numero2 {
+    print("Número 1 é maior que número 2")
+} else {
+    print("Número 1 é igual ao número 2")
+}
