@@ -93,7 +93,6 @@ var possuiCNHValida = false
 
 var podeDirigir = adulto || possuiCNHValida
 !adulto
-*/
 
  var idade = 22
 
@@ -120,4 +119,34 @@ if numero2 > numero1 {
     print("Número 1 é maior que número 2")
 } else {
     print("Número 1 é igual ao número 2")
+}
+
+var idade02 = 20
+
+idade02 >= 18 ? print("Maior de idade") : print("Não é maior de idade")
+
+ */
+
+var intervaloFechado = 10...20
+var intervaloSemiAberto = 10..<20
+
+var numero = 21
+
+switch numero {
+case 0...10: print("Numero esta entre 0 e 10")
+case 10...20: print("Numero esta entre 10 e 20")
+default: print("Numero é maior do que 20")
+}
+
+var animal = "Cachorro"
+
+switch animal {
+case "Cachorro", "Gato": print("Animal Doméstico")
+default: print("Animal Selvagem")
+}
+
+switch numero {
+case _ where numero % 2 == 0: print("Número \(numero) é par")
+case _ where numero % 2 != 0: print("Número \(numero) é ímpar")
+default: break
 }
