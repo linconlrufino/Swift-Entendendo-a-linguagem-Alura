@@ -236,15 +236,28 @@ while count <= 10 {
     print(count)
 }
 
- */
 
 
 //Desafios de loops - Imprimir números pares
-var number = 1
-
 for i in 1...10 {
     if i % 2 == 0 {
         print(i)
     }
 }
+    
+ */
 
+
+func soma(_ numero1: Int,_ numero2: Int) -> Int {
+    var resultado = numero1 + numero2
+    return resultado
+}
+
+print(soma(5, 3))
+
+func verificaAdulto(_ idade: Int) -> Bool {
+    return idade >= 18
+}
+
+print(verificaAdulto(23))
+print(verificaAdulto(17))
