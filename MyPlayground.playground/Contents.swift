@@ -160,15 +160,31 @@ print(numeroAleatorio)
 //Desafio 1 - Pontuação do usuário
 //ressaltando que por nao se tratar de um projeto do tipo comnnad line tool,
 //nao serao utilizados metodos I/O de commandLine
-let pergunta = "Qual o valor de 8 x 2?"
-let respostaCorreta : Int = 16
-let respostaUsuario : Int = 16
-var pontuacao = 0
+//let pergunta = "Qual o valor de 8 x 2?"
+//let respostaCorreta : Int = 16
+//let respostaUsuario : Int = 16
+//var pontuacao = 0
+//
+//if respostaCorreta == respostaUsuario {
+//    pontuacao = pontuacao + 1
+//} else {
+//    pontuacao = pontuacao - 1
+//}
+//
+//print(pontuacao)
 
-if respostaCorreta == respostaUsuario {
-    pontuacao = pontuacao + 1
-} else {
-    pontuacao = pontuacao - 1
-}
 
-print(pontuacao)
+//Desafio 2 - Idade do usuário
+//let idade = 18
+//
+//switch idade {
+//case 0..<13: print("Criança")
+//case 13..<18: print("Adolescente")
+//default:print("Adulto")
+//}
+
+//Desafio 3 - Operadores lógicos e relacionais
+let idade = 23;
+let possuiRG = true;
+
+(possuiRG && idade >= 18) ? print("Pode entrar") : print("Não pode entrar")
