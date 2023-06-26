@@ -187,8 +187,33 @@ let possuiRG = true;
 
 (possuiRG && idade >= 18) ? print("Pode entrar") : print("Não pode entrar")
 
- */
 
 for _ in 1...10 {
     print("I Love Cats")
 }
+
+ 
+var count = 1
+
+while count  <= 10 {
+    print("I Love Cats")
+    count += 1
+}
+
+
+var count = 1
+
+repeat {
+    print("I Love Cats")
+    count += 1
+} while count <= 10
+
+ */
+
+var soma = 0
+
+for i in 1...10 {
+    soma += i
+    print(soma)
+}
+
