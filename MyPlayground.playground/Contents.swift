@@ -125,8 +125,7 @@ var idade02 = 20
 
 idade02 >= 18 ? print("Maior de idade") : print("Não é maior de idade")
 
- */
-
+ 
 var intervaloFechado = 10...20
 var intervaloSemiAberto = 10..<20
 
@@ -150,3 +149,26 @@ case _ where numero % 2 == 0: print("Número \(numero) é par")
 case _ where numero % 2 != 0: print("Número \(numero) é ímpar")
 default: break
 }
+ 
+
+var numeroAleatorio = Int.random(in: 0...100)
+print(numeroAleatorio)
+
+ */
+
+
+//Desafio 1 - Pontuação do usuário
+//ressaltando que por nao se tratar de um projeto do tipo comnnad line tool,
+//nao serao utilizados metodos I/O de commandLine
+let pergunta = "Qual o valor de 8 x 2?"
+let respostaCorreta : Int = 16
+let respostaUsuario : Int = 16
+var pontuacao = 0
+
+if respostaCorreta == respostaUsuario {
+    pontuacao = pontuacao + 1
+} else {
+    pontuacao = pontuacao - 1
+}
+
+print(pontuacao)
