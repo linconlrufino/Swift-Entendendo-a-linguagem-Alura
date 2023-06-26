@@ -245,9 +245,6 @@ for i in 1...10 {
     }
 }
     
- */
-
-
 func soma(_ numero1: Int,_ numero2: Int) -> Int {
     var resultado = numero1 + numero2
     return resultado
@@ -261,3 +258,9 @@ func verificaAdulto(_ idade: Int) -> Bool {
 
 print(verificaAdulto(23))
 print(verificaAdulto(17))
+
+ */
+
+var telefone: String?
+telefone = "9 9999-9999"
+print(telefone!)
