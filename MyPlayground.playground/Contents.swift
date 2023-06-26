@@ -225,9 +225,6 @@ while count <= 10 {
     print(count)
     count += 1
 }
-
- */
-
  
 var count = 1
 
@@ -237,5 +234,17 @@ while count <= 10 {
         continue
     }
     print(count)
+}
+
+ */
+
+
+//Desafios de loops - Imprimir números pares
+var number = 1
+
+for i in 1...10 {
+    if i % 2 == 0 {
+        print(i)
+    }
 }
 
