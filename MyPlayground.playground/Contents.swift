@@ -263,4 +263,32 @@ print(verificaAdulto(17))
 
 var telefone: String?
 telefone = "9 9999-9999"
-print(telefone!)
+
+if telefone != nil {
+    print(telefone!)
+}
+
+var celular: String?
+celular = "8 8888-8888"
+
+if let telefone = telefone,
+   let celular = celular {
+    print(telefone)
+    print(celular)
+}
+
+func autenticar(usuario: String?, senha: String?) {
+    guard let usuario = usuario, let senha = senha
+        else { return }
+    
+    print(usuario)
+    print(senha)
+}
+
+autenticar(usuario: "Godofredo", senha: nil)
+ 
+if let primeiroCaractere = telefone?.first {
+    print(primeiroCaractere)
+}
+
+print(telefone ?? "Não há valor para telefone")
