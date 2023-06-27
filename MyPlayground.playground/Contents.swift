@@ -418,8 +418,6 @@ pessoa.idade
 
 var (nome, idade) = pessoa;
 
- */
-
 var pontuacao = [
     "arrascaeta": 20,
     "floyd": 10,
@@ -460,3 +458,39 @@ for nome in pontuacao.keys {
 for pontos in pontuacao.values {
     print(pontos)
 }
+
+ */
+
+//Desafio 1 - Aprovado ou reprovado?
+func mediaNotas (_ notas: Array<Double>) -> Double {
+    
+    var notasSomadas: Double = 0
+    let quantidadeNotas = Double(notas.count)
+    
+    for nota in notas {
+        notasSomadas += nota
+    }
+    
+    return notasSomadas / quantidadeNotas
+}
+
+var notas: Array<Double> = [1,10,10,7]
+
+var media = mediaNotas(notas)
+
+print(media)
+
+ 
+//Desafio 2 - Estados do Brasil
+func exibeEstados(_ estados: Dictionary<String,String>) {
+    for nome in estados.values {
+        if nome.count >= 8 {
+            print(nome)
+        }
+    }
+}
+
+var estados: Dictionary<String,String> = ["AM": "Amazonas","SP": "São Paulo", "CE": "Ceará", "RJ": "Rio de Janeiro"]
+
+exibeEstados(estados)
+
