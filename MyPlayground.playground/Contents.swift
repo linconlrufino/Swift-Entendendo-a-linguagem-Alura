@@ -354,7 +354,6 @@ func dividirConta(_ valorTotal: Double, _ quantidadeDePessoas: Int){
 
 dividirConta(120, 4)
 
- */
 
 var notas: [Double] = [8.5, 9.0, 7.2, 6.0]
 
@@ -366,9 +365,35 @@ notas.count
 notas.min()
 notas.max()
 notas.contains(7)
-
+    
 var indice = notas.firstIndex(of: 8.5)
 
 if let indice = indice {
     print(notas[indice])
 }
+
+notas.append(10)
+notas.insert(5.0, at: 2)
+notas += [8.2]
+print(notas)
+
+//var elementoRemovido = notas.removeLast()
+//var elementoRemovido = notas.removeFirst()
+var elementoRemovido = notas.remove(at: 3)
+print(elementoRemovido)
+
+print(notas)
+
+for nota in  notas {
+    print(nota)
+}
+
+for i in  0..<notas.count {
+    print(notas[i])
+}
+
+for (index, elemento) in notas.enumerated() {
+    print(index, elemento)
+}
+
+ */
