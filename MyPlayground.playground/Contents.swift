@@ -404,7 +404,6 @@ nomes.contains("Eros")
 nomes.insert("Legolas")
 nomes.remove("Legolas")
 
- */
 
 typealias Coordenadas = (x: Int,y: Double, z: Int)
 
@@ -418,3 +417,46 @@ pessoa.nome
 pessoa.idade
 
 var (nome, idade) = pessoa;
+
+ */
+
+var pontuacao = [
+    "arrascaeta": 20,
+    "floyd": 10,
+    "tankian": 15
+]
+
+var pessoas : [String: Int] = [:]
+pessoas.reserveCapacity(10)
+
+print(pontuacao["arrascaeta"])
+pontuacao.isEmpty
+pontuacao.count
+pontuacao["mancuello"] = 17
+pontuacao["floyd"] = 16
+print(pontuacao)
+
+pontuacao.updateValue(60, forKey: "arrascaeta")
+pontuacao.updateValue(55, forKey: "vardy")
+print(pontuacao)
+
+pontuacao["tankian"] = nil
+
+print(pontuacao)
+
+pontuacao.removeValue(forKey: "floyd")
+
+print(pontuacao)
+
+
+for (nome, pontuacao) in pontuacao {
+    print("O usuário \(nome) fez \(pontuacao) pontos.")
+}
+
+for nome in pontuacao.keys {
+    print(nome)
+}
+
+for pontos in pontuacao.values {
+    print(pontos)
+}
