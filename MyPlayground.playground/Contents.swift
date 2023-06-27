@@ -356,6 +356,7 @@ dividirConta(120, 4)
 
 
 var notas: [Double] = [8.5, 9.0, 7.2, 6.0]
+let array1 = [Int]()
 
 var arrayVazio = Array<String>()
 
@@ -397,3 +398,10 @@ for (index, elemento) in notas.enumerated() {
 }
 
  */
+
+var nomes: Set<String> = ["Pepeu","Madonna","John John", "Eros", "Frida"]
+
+nomes.contains("Eros")
+
+nomes.insert("Legolas")
+nomes.remove("Legolas")
