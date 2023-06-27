@@ -304,7 +304,6 @@ if let primeiroCaractere = nome?.first {
   print(primeiroCaractere)
 }
 
- */
 
 //Desafio 1 - Colocando a função para funcionar
 func verificaPrimo(_ numero: Int) -> Bool {
@@ -354,3 +353,22 @@ func dividirConta(_ valorTotal: Double, _ quantidadeDePessoas: Int){
 }
 
 dividirConta(120, 4)
+
+ */
+
+var notas: [Double] = [8.5, 9.0, 7.2, 6.0]
+
+var arrayVazio = Array<String>()
+
+notas.isEmpty
+arrayVazio.isEmpty
+notas.count
+notas.min()
+notas.max()
+notas.contains(7)
+
+var indice = notas.firstIndex(of: 8.5)
+
+if let indice = indice {
+    print(notas[indice])
+}
