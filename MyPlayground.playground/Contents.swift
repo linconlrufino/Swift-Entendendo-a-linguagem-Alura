@@ -259,8 +259,6 @@ func verificaAdulto(_ idade: Int) -> Bool {
 print(verificaAdulto(23))
 print(verificaAdulto(17))
 
- */
-
 var telefone: String?
 telefone = "9 9999-9999"
 
@@ -281,15 +279,16 @@ if let telefone = telefone,
 
 //Guard let
 func autenticar(usuario: String?, senha: String?) {
-    guard let usuario = usuario, let senha = senha
-        else { return }
+    guard let usuario = usuario, let senha = senha else {
+        return
+    }
     
     print(usuario)
     print(senha)
 }
 
 autenticar(usuario: "Godofredo", senha: nil)
- 
+    
 //Optional chaining
 if let primeiroCaractere = telefone?.first {
     print(primeiroCaractere)
@@ -297,3 +296,61 @@ if let primeiroCaractere = telefone?.first {
 
 //nil coalescing operator,
 print(telefone ?? "Não há valor para telefone")
+
+//optional chaining com optional binding
+var nome: String?
+nome = "Rodorfo"
+if let primeiroCaractere = nome?.first {
+  print(primeiroCaractere)
+}
+
+ */
+
+//Desafio 1 - Colocando a função para funcionar
+func verificaPrimo(_ numero: Int) -> Bool {
+    var inicio = 2
+    
+    for i in inicio..<numero {
+        if numero % i == 0 {
+            return false
+        }
+    }
+    
+    return true
+}
+
+verificaPrimo(6)
+verificaPrimo(7)
+
+//Desafio 2 - Função com opcional
+func exibirNome(_ nome: String?) -> Void {
+    print(nome ?? "Nome não especificado")
+}
+
+//ou
+
+func mostraNome(_ nome: String?) -> Void {
+    guard let nome = nome else {
+        print("Nome não especificado")
+        return
+    }
+    
+    print(nome)
+}
+
+exibirNome("Tolstoi")
+exibirNome(nil)
+
+mostraNome("Gerundio")
+mostraNome(nil)
+
+//Desafio 3 - Indo ao restaurante
+func dividirConta(_ valorTotal: Double, _ quantidadeDePessoas: Int){
+    var valorComTaxa = valorTotal * 1.1
+    
+    var valorDividido = valorComTaxa / Double(quantidadeDePessoas)
+    
+    print(valorDividido)
+}
+
+dividirConta(120, 4)
