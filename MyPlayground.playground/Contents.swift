@@ -397,11 +397,24 @@ for (index, elemento) in notas.enumerated() {
     print(index, elemento)
 }
 
- */
-
 var nomes: Set<String> = ["Pepeu","Madonna","John John", "Eros", "Frida"]
 
 nomes.contains("Eros")
 
 nomes.insert("Legolas")
 nomes.remove("Legolas")
+
+ */
+
+typealias Coordenadas = (x: Int,y: Double, z: Int)
+
+var coordenadas: Coordenadas  =  (x: 5,y: 3.5, z: 8)
+coordenadas.x
+coordenadas.y
+coordenadas.z
+
+var pessoa = (nome: "Gollum", idade: 589)
+pessoa.nome
+pessoa.idade
+
+var (nome, idade) = pessoa;
