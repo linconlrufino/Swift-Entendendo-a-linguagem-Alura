@@ -264,6 +264,7 @@ print(verificaAdulto(17))
 var telefone: String?
 telefone = "9 9999-9999"
 
+//Forçar o desembrulho com auxilio de uma condição
 if telefone != nil {
     print(telefone!)
 }
@@ -271,12 +272,14 @@ if telefone != nil {
 var celular: String?
 celular = "8 8888-8888"
 
+//Optional Binding
 if let telefone = telefone,
    let celular = celular {
     print(telefone)
     print(celular)
 }
 
+//Guard let
 func autenticar(usuario: String?, senha: String?) {
     guard let usuario = usuario, let senha = senha
         else { return }
@@ -287,8 +290,10 @@ func autenticar(usuario: String?, senha: String?) {
 
 autenticar(usuario: "Godofredo", senha: nil)
  
+//Optional chaining
 if let primeiroCaractere = telefone?.first {
     print(primeiroCaractere)
 }
 
+//nil coalescing operator,
 print(telefone ?? "Não há valor para telefone")
